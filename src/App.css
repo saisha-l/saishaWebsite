@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:ital@1&family=Oranienbaum&display=swap');
+
+
+.App{
+
+  justify-content: center; 
+align-content: center;
+
+}
+
+.headir{
+position: absolute;
+float:inherit;
+}
+.me{
+  
+  align-items: center;
+  position: fixed;
+  z-index: -10;
+}
+
+.name{
+  
+  position: fixed;
+  font-family: 'Oranienbaum', serif;
+  font-weight: 100;
+  font-style: italic;
+  font-size: 90px;
+  color: #ffffff;
+  z-index: +10;
+  text-shadow: 5px 10px 15px black;
+
+}
+.buttonDIV{
+z-index: +10;
+justify-content: center;
+
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+/* Assuming the parent of .headir is .App-header */
+.App-header {
+  display: flex;
+  justify-content: center; /* Horizontally center */
+  align-items: center; /* Vertically center */
+  /* Other styles... */
+}
+
+.headir {
+  /* Remove align-content and float if not needed */
+  position: relative; /* Change to relative if inside a flex container */
+  /* Other styles... */
+}
+
+.me {
+  position: fixed;
+  top: 50%; /* Center vertically */
+  left: 50%; /* Center horizontally */
+  transform: translate(-50%, -50%); /* Adjust for the element's dimensions */
+  z-index: -10;
+}
+
+.name {
+  position: fixed;
+  left: 50%;
+  transform: translateX(-50%);
+  
+  /* Other styles... */
+}
+
+.button{
+  position: fixed;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-weight: 500;
+  font-style: italic;
+  font-size: 30px;
+  color: #ffffff;
+  z-index: +10;
+background-color: pink;
+padding: 10;
+position: fixed;
+  left: 50%;
+  transform: translateX(-50%);
+  width: max-content;
+  border-radius: 50px;
+  border-width: 5px;
+  border-style: solid;
+  text-align: center;
+  padding-left: 10px;
+  padding-right: 10px;
+  user-select: none;
+
+
+
+}
+.button:hover{
+  background-color: palevioletred;
+  color: #ffffff;
+
+}
